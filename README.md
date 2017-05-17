@@ -11,3 +11,4 @@ To Do List:
 1. Make the user define his own switches
 2. Make the home page more beautiful
 3. Make the script ignore keywords and symbols in strings
+4. Make error messages appear in fake console and remove debug messages from console
