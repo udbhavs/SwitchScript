@@ -1,0 +1,67 @@
+body {
+    background-color: #222 !important;
+    font-family: Helvetica;
+    border-color: dodgerblue;
+}
+
+#header {
+    width: 100%;
+    height: 50px;
+    top: 0px;
+}
+
+#mainhead {
+    position: absolute;
+    background-color: #222;
+    font-family: Helvetica;
+    transition-duration: 0.3s;
+    color: dodgerblue;
+    text-align: center;
+    font-size: 35px;
+    left: 39.5%;
+}
+
+.option {
+    display: inline-block;
+    visibility: hidden;
+    transition: 0.3s;
+    position: absolute;
+    font-size: 25px;
+    color: dodgerblue;
+    left: 30%;
+}
+
+item:hover {
+    color: white !important;
+    cursor: pointer;
+}
+
+.viewable {
+    color: white;
+    visibility: visible;
+}
+
+#textarea {
+    width : 40%;
+    height: 85%;
+    font-family: Helvetica;
+    background-color: #444;
+    color: antiquewhite;
+}
+
+#main {
+    margin-top: 35px;
+}
+
+#reports {
+    background-color: #222;
+    position: absolute;
+    left: 50%;
+    width: 40%;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+report {
+    color: antiquewhite;
+}
