@@ -1,0 +1,66 @@
+<meta charset="utf-8">
+<html>
+    
+    <head><title>SwitchScript</title></head>
+    <link href = "css/index.css" rel = "stylesheet">
+    <script src = "js/home.js"></script>
+    <script>
+        //number of rows
+        var num = 1;
+        //add new rows
+        function add() {
+            num++;
+            var rows = document.getElementById("rows");
+            var div = document.createElement("div");
+            var keyIn = document.createElement("input");
+            keyIn.setAttribute("id", "key" + num);
+            keyIn.setAttribute("type", "text");
+            var valIn = document.createElement("input");
+            valIn.setAttribute("id", "val" + num);
+            valIn.setAttribute("type", "text");
+            div.appendChild(keyIn);
+            div.appendChild(valIn);
+            rows.appendChild(div);
+        }
+        //when submit is clicked
+        function submit() {
+            var obj = {};
+            console.log(num);
+            for (var i = 1; i <= num; i++) {
+                var key = document.getElementById("key" + i).value;
+                var val = document.getElementById("val" + i).value;
+                console.log("reached");
+                obj[key] = val;
+            }
+            setObj(obj);
+            window.location.href = "code.html";
+        }
+    </script>
+    
+    <body>
+        
+        <div id = "header">  
+            <item id = "mainhead">SwitchScript</item>            
+        </div>
+        
+        <div id = "main">
+            
+            <h1>Enter the keywords and replacements</h1>
+            
+            <div id = "rows">
+            
+            <div id = "row1">
+                <input id = "key1" type = "text" />
+                <input id = "val1" type = "text" />
+            </div>
+                
+            </div>
+            
+            <button id = "add" onclick="add()">Add Row</button>
+            <button id = "submitButton" onclick = "submit()">Submit</button>
+            
+        </div>
+        
+    </body>
+    
+</html>

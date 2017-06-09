@@ -2,12 +2,27 @@
 <html>
     
     <head><title>SwitchScript</title></head>
-    
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/home.js"></script>
+    <script>
+        function code() {
+            window.location.href = "code.html";
+        }
+        function create() {
+            window.location.href = "create.html";
+        }
+    </script>
 
     <body>
         
-        <div id = "header">       
-            <h1 id = "mainhead">SwitchScript</item>       
+        <div id = "header">
+            
+            <item id = "mainhead">SwitchScript</item>
+            <item class = "option" id = "home">Home</item>
+            <item class = "option" id = "about">About</item>
+            <item class = "option" id = "run" onclick = "code()">Editor</item>
+            <item class = "option" id = "clear" onclick = "create()">Create</item>
+            
         </div>
         
         <div id = "main">
